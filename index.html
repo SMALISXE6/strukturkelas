@@ -3,193 +3,253 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jadwal Piket Kelas X-E6</title>
+<title>Struktur Kelas X-E6</title>
 
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-    background:linear-gradient(135deg,#c7f2ff,#9ed8ff,#6bc7ff);
-    background-size:400% 400%;
-    animation:bg 10s ease infinite;
-    padding:30px;
+background:#eef9ef;
+color:#184d2f;
 }
 
-@keyframes bg{
-    0%{background-position:0% 50%;}
-    50%{background-position:100% 50%;}
-    100%{background-position:0% 50%;}
+header{
+max-width:1000px;
+margin:25px auto;
+padding:0 15px;
 }
 
-.container{
-    max-width:1200px;
-    margin:auto;
+.banner{
+width:100%;
+aspect-ratio:16/9;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 8px 25px rgba(0,0,0,.15);
+border:5px solid #4CAF50;
+}
+
+.banner img{
+width:100%;
+height:100%;
+object-fit:cover;
 }
 
 h1{
-    text-align:center;
-    color:white;
-    margin-bottom:30px;
-    font-size:38px;
-    text-shadow:0 4px 15px rgba(0,0,0,.25);
+text-align:center;
+margin:20px 0;
+font-size:34px;
+color:#1b5e20;
 }
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:25px;
+.container{
+max-width:1000px;
+margin:auto;
+padding:15px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+gap:20px;
 }
 
 .card{
-    background:rgba(255,255,255,.25);
-    backdrop-filter:blur(12px);
-    border-radius:22px;
-    padding:22px;
-    border:1px solid rgba(255,255,255,.4);
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-    transition:.4s;
-    animation:fade .8s ease;
+background:white;
+border-radius:18px;
+padding:15px;
+display:flex;
+align-items:center;
+gap:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+border-left:8px solid #43a047;
+transition:.35s;
+cursor:pointer;
 }
 
 .card:hover{
-    transform:translateY(-10px) scale(1.04);
-    box-shadow:0 20px 40px rgba(0,140,255,.4);
-    background:rgba(255,255,255,.4);
+transform:translateY(-8px) scale(1.02);
+box-shadow:0 15px 35px rgba(76,175,80,.4);
 }
 
-@keyframes fade{
-    from{
-        opacity:0;
-        transform:translateY(40px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
+.photo{
+width:95px;
+height:95px;
+border-radius:18px;
+overflow:hidden;
+flex-shrink:0;
+border:4px solid #4CAF50;
 }
 
-.card h2{
-    text-align:center;
-    color:#0077b6;
-    margin-bottom:15px;
-    font-size:24px;
+.photo img{
+width:100%;
+height:100%;
+object-fit:cover;
 }
 
-ul{
-    list-style:none;
+.info h2{
+font-size:20px;
+margin-bottom:8px;
+color:#2e7d32;
 }
 
-li{
-    background:white;
-    margin:8px 0;
-    padding:10px;
-    border-radius:10px;
-    transition:.3s;
-    color:#0a4f73;
-    font-weight:500;
+.info p{
+font-size:15px;
+margin:4px 0;
+font-weight:600;
 }
 
-li:hover{
-    background:#87d8ff;
-    color:white;
-    transform:translateX(8px);
+footer{
+text-align:center;
+padding:25px;
+font-weight:bold;
+color:#2e7d32;
 }
 
-.footer{
-    margin-top:35px;
-    text-align:center;
-    color:white;
-    font-weight:bold;
-    font-size:18px;
+@media(max-width:600px){
+
+.card{
+flex-direction:column;
+text-align:center;
+}
+
+.photo{
+width:120px;
+height:120px;
+}
+
+h1{
+font-size:28px;
+}
+
 }
 </style>
 
 </head>
 <body>
 
+<header>
+
+<div class="banner">
+<img src="banner.jpg" alt="Banner">
+</div>
+
+<h1>🏤✨ STRUKTUR KELAS X-E6</h1>
+
+</header>
+
 <div class="container">
 
-<h1>🪸 JADWAL PIKET KELAS X-E6 🪸</h1>
-
-<div class="grid">
-
 <div class="card">
-<h2>🐞 SENIN</h2>
-<ul>
-<li>Aditya Ramadhan</li>
-<li>Afifa Rifi</li>
-<li>Alfa Rizky</li>
-<li>Alinka Shelva</li>
-<li>Anindita Putri</li>
-<li>Audrey Farika</li>
-<li>Bernike Anaya</li>
-</ul>
+<div class="photo">
+<img src="ketua.jpg">
+</div>
+
+<div class="info">
+<h2>👑 Ketua & Wakil</h2>
+<p>Ketua : Clarisa</p>
+<p>Wakil : Gabriel</p>
+</div>
 </div>
 
 <div class="card">
-<h2>🐞 SELASA</h2>
-<ul>
-<li>Civa Evanda</li>
-<li>Clarisa Sekar</li>
-<li>Cornelia Joan</li>
-<li>Ekklesia Grace</li>
-<li>Ellen Dyna</li>
-<li>Erlintang Kharisma</li>
-<li>Ezra Ziv</li>
-</ul>
+<div class="photo">
+<img src="bendahara.jpg">
+</div>
+
+<div class="info">
+<h2>💸 Bendahara</h2>
+<p>Bendahara ¹ : Bernike</p>
+<p>Bendahara ² : Kinka</p>
+</div>
 </div>
 
 <div class="card">
-<h2>🐞 RABU</h2>
-<ul>
-<li>Fahrica Zahrotus</li>
-<li>Faizatul Huzna</li>
-<li>Febby Surya</li>
-<li>Gamaliel Putra</li>
-<li>Ineztasya Malva</li>
-<li>Jenar Kalisha</li>
-<li>Johan Febriyanto</li>
-</ul>
+<div class="photo">
+<img src="sekretaris.jpg">
+</div>
+
+<div class="info">
+<h2>📝 Sekretaris</h2>
+<p>Sekretaris ¹ : Thania</p>
+<p>Sekretaris ² : Afifa</p>
+</div>
 </div>
 
 <div class="card">
-<h2>🐞 KAMIS</h2>
-<ul>
-<li>Khansa Khoirunisa</li>
-<li>Lionel Adrian</li>
-<li>Muhammad Rafif</li>
-<li>Naomi Navelia</li>
-<li>Nendra Putra</li>
-<li>Rafael Diego</li>
-<li>Ronahadida Khotulwusty</li>
-</ul>
+<div class="photo">
+<img src="humas.jpg">
+</div>
+
+<div class="info">
+<h2>📱 Humas</h2>
+<p>Jenar</p>
+<p>Christo</p>
+<p>Lionel</p>
+</div>
 </div>
 
 <div class="card">
-<h2>🐞 JUMAT</h2>
-<ul>
-<li>Samitha Aisya</li>
-<li>Sheren Amaleta</li>
-<li>Stevanus Gabriel</li>
-<li>Thania Risty</li>
-<li>Vindy Ayu</li>
-<li>Yohanes Caesar</li>
-<li>Yose Christofer</li>
-</ul>
+<div class="photo">
+<img src="bersih.jpg">
+</div>
+
+<div class="info">
+<h2>🧹 Seksi Kebersihan</h2>
+<p>Inestasya</p>
+</div>
+</div>
+
+<div class="card">
+<div class="photo">
+<img src="aman.jpg">
+</div>
+
+<div class="info">
+<h2>👨‍✈️ Seksi Keamanan</h2>
+<p>Gama</p>
+</div>
+</div>
+
+<div class="card">
+<div class="photo">
+<img src="olahraga.jpg">
+</div>
+
+<div class="info">
+<h2>🏃‍♂️ Seksi Olahraga</h2>
+<p>Nendra</p>
+</div>
+</div>
+
+<div class="card">
+<div class="photo">
+<img src="islam.jpg">
+</div>
+
+<div class="info">
+<h2>☪️ Kerohanian Islam</h2>
+<p>Audrey</p>
+</div>
+</div>
+
+<div class="card">
+<div class="photo">
+<img src="kristen.jpg">
+</div>
+
+<div class="info">
+<h2>✝️ Kerohanian Kristen</h2>
+<p>Civa</p>
+</div>
 </div>
 
 </div>
 
-<div class="footer">
-💙 Tetap Jaga Kebersihan Kelas X-E6 💙
-</div>
-
-</div>
+<footer>
+🌿 X-E6 • Together We Grow 🌿
+</footer>
 
 </body>
 </html>
