@@ -14,7 +14,11 @@ font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-background:#eef9ef;
+background-image:url("wallpaper.jpg"); /* Ganti dengan gambar sendiri */
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
 color:#184d2f;
 }
 
@@ -126,6 +130,37 @@ color:#2e7d32;
 
 .info p{
     font-size:14px;
+}
+
+.social{
+text-align:center;
+margin:30px 0;
+}
+
+.ig-btn{
+display:inline-flex;
+align-items:center;
+gap:12px;
+padding:14px 24px;
+background:linear-gradient(45deg,#833AB4,#FD1D1D,#FCAF45);
+color:#fff;
+text-decoration:none;
+font-weight:bold;
+font-size:17px;
+border-radius:50px;
+box-shadow:0 8px 20px rgba(0,0,0,.2);
+transition:.3s;
+}
+
+.ig-btn:hover{
+transform:translateY(-5px) scale(1.05);
+box-shadow:0 15px 30px rgba(131,58,180,.35);
+}
+
+.ig-btn img{
+width:30px;
+height:30px;
+border-radius:8px;
 }
 
 } /* <- Penutup @media */
@@ -251,6 +286,13 @@ color:#2e7d32;
 </div>
 </div>
 
+</div>
+
+<div class="social">
+    <a href="https://instagram.com/esixverse_" target="_blank" class="ig-btn">
+        <img src="instagram.png" alt="Instagram">
+        Follow Instagram X-E6
+    </a>
 </div>
 
 <footer>
